@@ -111,11 +111,10 @@
 									<h3>Data cleaning:</h3>
 									<p>Before diving deep into analysis, the dataset underwent a rigorous cleaning process to ensure the integrity and clarity of the insights. This involved:</p>
 										<ol>
-											<li><b>Removing Duplicates</b>: Ensuring no donor was counted more than once.</li>
+											<li><b>Removing Duplicates</b>: Ensuring no Course ID appeared more than once.</li>
 											<li><b>Addressing Missing Values</b>: Filling or removing gaps (or null values) in the data where necessary.</li>
 											<li><b>Normalizing Data</b>: Adjusting numerical values for comparability, crucial for analysis.</li>
-											<li><b>Correcting Errors</b>: Amending typos and inaccuracies in state names, job field, and other categorical data.</li>
-											<li><b>Consolidating Data</b>: Merging both (donation and donor) tables while avoiding redundancy.</li>
+											<li><b>Correcting Errors</b>: Amending typos and inaccuracies in courese titles, level, and other categorical data.</li>
 											<li><b>Anonymizing Data</b>: Protecting donor privacy by anonymizing personal information where required.</li>
 											<li><b>Pruning Irrelevant Data</b>: Removing non-essential data fields for a focused analysis.</li>
 											<li><b>Sorting and Filtering</b>: Arranging the data for optimal analysis and filtering out the noise.</li>
@@ -129,9 +128,15 @@
 										The data spoke of not just numbers, but of people, places, and the potential for change. 
 										It illustrated a nuanced portrait of donor activity, with each metric telling a part of the story.</p>
 
-										<h4>Gender and Donation Patterns</h4>
-										<p>With the Females donating $121,457 (508 donors) and Males donating $127,628 (492 donors), we can rightly say that it is an even gender distribution.</p>
+										<h4>Popularity by Subject</h4>
+										<p>Web Development is the most popular subject in terms of subscribers, with 7,981,935 subscribers, 
+											which is significantly higher than the other subjects listed. This is followed by Business Finance, Graphic Design, 
+											and Musical Instruments in terms of popularity.</p>
 											<center><img width="600" src="images/education_for_all/Donations by Gender.png" alt="" /></center>
+										<h4>Revenue Generation</h4>
+										<p>Business Finance generates the most revenue, despite not having the highest number of subscribers. This could indicate higher-priced 
+											courses or more courses sold overall. The total revenue for Web Development is also substantial, considering its high subscription base.</p>
+									
 										<h4>Geographical Giving Trends</h4>
 										<p>Digging into the maps, California's vast donor base lit up like a beacon of generosity.
 											California has the highest number of donors (113), and the highest amount of donations ($30,264).
