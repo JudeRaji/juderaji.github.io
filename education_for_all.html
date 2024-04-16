@@ -104,27 +104,76 @@
 									
 									<hr class="major" />
 
-									<h3>Strategic Recommendations:</h3>
-										<p>Based on the findings in this report, here are a few recommendations:</p>
+									<h3>The Analytical Approach:</h3>
+									<p>The journey began with root cause analysis (RCA), a methodical approach to uncover the underlying reasons for the variations in donation figures across different regions.
+										Employing the Five Whys technique, I was able to delve into the data and question each finding to reach the core issues that affect fundraising outcomes.</p>
+	
+									<h3>Data cleaning:</h3>
+									<p>Before diving deep into analysis, the dataset underwent a rigorous cleaning process to ensure the integrity and clarity of the insights. This involved:</p>
 										<ol>
-											<li><b>Sustain Production and Delivery Alignment</b>: Continue to refine production efficiency to match the impressive delivery rates, 
-												ensuring Tesla can meet increasing demand without accumulating excess inventory.</li>
-											<li><b>Strategic Global Expansion</b>: Prioritize expansion into new markets with high growth potential, such as Japan, South Korea, 
-												India and Mexico, to build upon the established success in the United States, Germany, and China.</li>
-											<li><b>Invest in R&D for Sustained Innovation</b>: Allocate a portion of the robust revenue to research and development, 
-												particularly in battery technology and autonomous driving, to maintain Tesla’s competitive edge in innovation.</li>
-											<li><b>Enhance Workforce Development</b>: Focus on talent cultivation and retention to support the increased scale of operations, 
-												ensuring that workforce growth contributes effectively to company goals.</li>
-											<li><b>Refine Pricing and Cost Management</b>: With a healthy financial standing, Tesla should continually assess and adjust its 
-												pricing strategy to remain competitive while also looking for new ways to optimize costs and enhance profitability.</li>
+											<li><b>Removing Duplicates</b>: Ensuring no donor was counted more than once.</li>
+											<li><b>Addressing Missing Values</b>: Filling or removing gaps (or null values) in the data where necessary.</li>
+											<li><b>Normalizing Data</b>: Adjusting numerical values for comparability, crucial for analysis.</li>
+											<li><b>Correcting Errors</b>: Amending typos and inaccuracies in state names, job field, and other categorical data.</li>
+											<li><b>Consolidating Data</b>: Merging both (donation and donor) tables while avoiding redundancy.</li>
+											<li><b>Anonymizing Data</b>: Protecting donor privacy by anonymizing personal information where required.</li>
+											<li><b>Pruning Irrelevant Data</b>: Removing non-essential data fields for a focused analysis.</li>
+											<li><b>Sorting and Filtering</b>: Arranging the data for optimal analysis and filtering out the noise.</li>
+											<li><b>Verifying Accuracy</b>: Ensuring the dataset’s reflections of real-world entities post-cleaning.</li>
 										</ol>
+									<p>With a clean and reliable dataset, the stage was set for deeper analysis and visualization.</p>
 
 									<hr class="major" />
-									<h3>Conclusion:</h3>
-									<p>The report underscores Tesla’s significant growth and strategic expansion, suggesting a strong future both for the company and its investors. 
-										Tesla's trajectory shows potential for continued leadership in the electric vehicle industry, promising for those invested in sustainable 
-										innovation and market transformation.</p>
-										<p>For a more detailed exploration of the data story, please check out the <a href="https://app.powerbi.com/view?r=eyJrIjoiNWIwODgwYjItYzQxMS00MjY1LWIxYmItMDc3OWJkZGM5ZmNiIiwidCI6ImRmODY3OWNkLWE4MGUtNDVkOC05OWFjLWM4M2VkN2ZmOTVhMCJ9">Dashboard</a></p>
+									<h3>Insights and Recommendations:</h3>
+									<p>Diving into the heart of the dataset revealed a narrative rich with insights. 
+										The data spoke of not just numbers, but of people, places, and the potential for change. 
+										It illustrated a nuanced portrait of donor activity, with each metric telling a part of the story.</p>
+
+										<h4>Gender and Donation Patterns</h4>
+										<p>With the Females donating $121,457 (508 donors) and Males donating $127,628 (492 donors), we can rightly say that it is an even gender distribution.</p>
+											<center><img width="600" src="images/education_for_all/Donations by Gender.png" alt="" /></center>
+										<h4>Geographical Giving Trends</h4>
+										<p>Digging into the maps, California's vast donor base lit up like a beacon of generosity.
+											California has the highest number of donors (113), and the highest amount of donations ($30,264).
+											However, South Dakota had the highest donation density ($401.00 per donor) while Alabama had the lowest donation density ($131.45 per donor).</p>
+											<center><img width="600" src="images/education_for_all/map.jpg" alt="" /></center>
+									
+										<h4>Donor Engagement and Frequency</h4>
+											<p>One-time donations are the most popular, significantly outpacing the lesser frequent monthly and weekly contributions.</p>
+											<center><img width="600" src="images/education_for_all/donation frequency.png" alt="" /></center>
+		
+										<h4>Job Type Donation Influence</h4>
+										<p><b>Human Resources</b> had the highest number of Donors (93) and the highest amount of donations ($24,060), 
+											while <b>Legal had the lowest number of donors (66) and the lowest amount of donations ($17,309)</b>. However, Research and 
+											Development had the highest donation density ($272.17 per donor), while Sales 
+											had the lowest donation frequency ($229.02)</p>
+
+									<hr class="major" />
+									<h3>Recommendations for Strategic Outreach:</h3>
+									<ul>
+										<li><b>Enhanced Focus on California</b>: The suggestion to increase efforts in California is strategic. 
+											Even though the state leads in total donations, optimizing the average donation value can lead to significant growth. 
+											Tailored campaigns could inspire larger contributions, leveraging the existing donor base.</li>
+										<li><b>Expanding Geographic Outreach</b>: Targeting other major states with potential donor bases can help diversify and increase overall donations. 
+											Broadening the donor pool is essential for sustainable growth and can also protect against regional economic downturns.</li>
+										<li><b>Engagement in Underrepresented Regions</b>: Identifying and addressing the lack of donations in the Northeast, Midwest, and South is critical. 
+											This could involve researching barriers to giving in these areas and crafting specific strategies to overcome them.</li>
+										<li><b>Increasing Donation Frequency</b>: Encouraging donors to contribute more regularly is a sound strategy for building a stable stream of revenue. 
+											Regular giving can also strengthen the donor's emotional investment in the cause.</li>
+										<li><b>Data Streamlining and Relevance</b>: Purging irrelevant data points makes for a more focused analysis and decision-making process. 
+											It's important to collect data that can lead to actionable insights.</li>
+										<li><b>In-depth Donor Analysis</b>: Gathering more demographic data, such as age and income levels, 
+											can greatly enhance personalized fundraising approaches and enable targeted engagement strategies.</li>
+										<li><b>Collaboration with Educational Institutions</b>: Given that a significant portion of donors are educated, 
+											partnerships with educational institutions could tap into a network of potential donors who already value learning, 
+											resonating with the charity's mission.</li>
+									</ul>
+
+									<hr class="major" />
+									<h3>Conclusion and Reflections</h3>
+								<p>The journey with Education for All underscored the transformative power of data when harnessed with intention and expertise. 
+									The analysis was more than a task; it was a commitment to turning data into actionable knowledge that could significantly advance the cause of educational accessibility.</p>
+									<p>For a more detailed exploration of the data story, please visit the <a href="https://app.powerbi.com/view?r=eyJrIjoiNTgwZGJjYzItZTgzYy00MTQ4LWI2MmYtY2U2M2FhNDk0MmQ2IiwidCI6IjI1Y2UwMjYxLWJiZDYtNDljZC1hMWUyLTU0MjYwODg2ZDE1OSJ9">Dashboard</a></p>
 								</section>
 
 						</div>
