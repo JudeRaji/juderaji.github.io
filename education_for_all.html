@@ -39,46 +39,69 @@
 
 									<span class="image main"><img src="images/education_for_all/education_dashboard.png" alt="" /></span>
 
-									<h3>Purpose:</h3>
-										<p>The aim of this project is to analyze Tesla's multifaceted performance from 2019 to 2023, utilizing data from production, workforce expansion, 
-										financial results, and global factory locations. The intent is to provide investors and company stakeholders with clear insights into 
-										Tesla's operational efficiency, market growth, and financial health, to support informed decisions regarding future investments and 
-										strategic directions within the electric vehicle market. This analysis will spotlight key areas of success and potential growth, 
-										guiding focused investment strategies in the evolving automotive landscape.</p>
+									<h3>Introduction:</h3>
+									<p>In the landscape of philanthropy, data is often an untapped resource. For organizations like Education for All, 
+										which strives to make learning accessible to underserved communities, understanding the nuances of donor behavior is critical. 
+										This understanding shapes the strategies that open hearts and wallets, driving the mission forward. 
+										My role in this narrative was not just to interpret a dataset but to weave a story from numbers that could galvanize potential benefactors into action.</P>
+										<p>The task was both a privilege and a challenge—a privilege because of the potential impact on educational accessibility, 
+										and a challenge because it required distilling a wealth of information into a clear, compelling narrative. 
+										The raw material was a rich dataset: a tapestry of figures and facts about the past year’s donation activities. My objective? 
+										To transform this into insights that would resonate with stakeholders at an all-important investor meeting.</p>
 									<hr class="major" />
-									<h3>Methodology and Data Structures:</h3>
-										<p>This analysis was meticulously conducted by sourcing data directly from <a href="https://ir.tesla.com">Tesla's Investor Relations website</a>, 
-										where official quarterly reports from 2019 to 2023 were made publicly available. 
-										A total of 20 PDF files were methodically reviewed and extracted.</p>
-										<p>To manage and transform this extensive dataset, we employed Power Query, a powerful ETL (Extract, Transform, Load) tool that streamlined 
-										the consolidation and cleaning process. Power Query enabled the extraction of relevant figures and narratives from the reports, 
-										transforming them into a structured format suitable for analysis. The processed data was then utilized to craft the comprehensive 
-										KPI dashboard that serves as the backbone of this report, ensuring the findings are both reliable and actionable.</p>
+									
+									<h3>Problem Statement:</h3>
+									
+									<p>Education for All, a charity organization wants to organize a fundraising event for the next year. 
+										The Head of the Fundraising team would like a report on donor insights and donation rates for the previous year, 
+										and how donation figures and frequencies can be increased.</p>
+									<h3>Task:</h3>
+									<p>As a Data Analyst, working for the Charity, Write a report and create a dashboard as per the requirements provided by stakeholders. 
+										Also, give actionable insights about how to:</p>
+									<ul>
+										<li>Increase donors in the database.</li>
+										<li>Increase donation frequency of donors, and</li>
+										<li>Increase the value of donations in the database.</li>
+									</ul>
 
 									<hr class="major" />
 									
-									<h3>Key Discoveries and Insights:</h3>
-										<p>A look through Tesla's recent history from 2019 to 2023 reveals some compelling narratives about its growth:</p>
-										<ul>
-											<li><b>Vehicle Output</b>: Tesla has impressively rolled out over 5 million vehicles and nearly matched this in deliveries, 
-												painting a picture of a company adeptly meeting its customers’ needs and navigating the logistics of supply and demand.
-												<center><img width="600" src="images/tesla_sales/vehicle_output.png" alt="Vehicle Output" /></center></li>
-											<li><b>Workforce Growth</b>: The Tesla family has grown significantly, boasting a workforce that’s nearly tripled. 
-												After a burst of hiring in 2020, the pace settled, suggesting a shift towards strengthening the existing team 
-												and focusing on sustainable growth.
-												<center><img width="600" src="images/tesla_sales/workforce_growth.png" alt="Workforce Growth" /></center></li>
-											<li><b>Financial Fortitude</b>: On the financial front, Tesla's numbers tell a story of success and savvy. 
-												Revenue spiked, especially striking in 2023 when it hit nearly $97 billion. While there was a small dip in gross profits after 2022, 
-												it seems Tesla's navigating through the ebb and flow of business costs and market trends with a steady hand.</li>
-											<li><b>Revenue Versus Expenses</b>: The gap between revenue and operating costs has widened, with revenue leaping ahead. 
-												It appears Tesla is getting smarter with its spending, investing in growth without letting costs spiral, 
-												a promising sign of a maturing business.
-												<center><img width="600" src="images/tesla_sales/revenue_vs_expenses.png" alt="Revenue Vs. Expenses" /></center></li>
-											<li><b>Geographic Expansion</b>: Tesla's global footprint is expanding, with established bases in the United States, Germany, and China, 
-												and eyes on new locations like Mexico and India. This isn't just about building cars; it's about reaching out to new customers
-												and planting flags in diverse markets.
-												<center><img width="600" src="images/tesla_sales/factory_locations.png" alt="Factory Locations" /></center></li>
-										</ul>
+									<h3>Extra Note</h3>
+									<p>In two weeks, the team is having a fundraising strategy meeting for the following year, 
+										and I will need to present insights from donation data to inform my fundraising strategy and increase donations.
+										Two tables have been provided for this exercise. When merged together, These tables contain 1,000 records and 15 fields:</p>
+										<div class="row">
+										    <div class="column">
+										        <h4>EFO_Donation_Data</h2>
+										        <ul>
+												<li><b>id</b></B>: Donor first name</li>
+												<li><b>first_name</b>: Donor last name</li>
+												<li><b>last_name</b>: Donor email address</li>
+											  	<li><b>email</b>: Donor gender</li>
+												<li><b>job_vield</b>: Donor job field</li>
+												<li><b>donation</b>: Donoation amount</li>
+												<li><b>state</b>: Donor state of residence (US)</li>
+												<li><b>shirt_size</b>: Donor t-shirt size</li>
+											</ul>
+										    </div>
+										<div></div>
+											<div></div>
+											<div></div>
+																		    
+										    <div class="column">
+										        <h4>EFO_Donor_Data</h2>
+										        <ul>
+												<li><b>id</b>: Donor ID</li>
+												<li><b>donation_frequency</b>: Frequency of donation</li>
+												<li><b>university</b>: Donor University attended</li>
+												<li><b>car</b>: Donor car make</li>
+												<li><b>second_language</b>: Donor second language</li>
+												<li><b>favourite_colour</b>: Donor favourite colour</li>
+												<li><b>movie_genre</b>: Donor favourite movie genre</li>
+										        </ul>
+										    </div>
+										</div>
+									
 									<hr class="major" />
 
 									<h3>Strategic Recommendations:</h3>
